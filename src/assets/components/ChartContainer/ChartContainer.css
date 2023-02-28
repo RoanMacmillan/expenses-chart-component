@@ -1,0 +1,8 @@
+.chartContainer {
+
+    width: 343px;
+    height: 534px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

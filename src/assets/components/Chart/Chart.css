@@ -1,0 +1,113 @@
+.chart {
+  /* width: 100%; */
+  height: 421px;
+  background: #fffbf6;
+  border-radius: 10px;
+  padding: 24px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.barsContainer {
+}
+
+.recharts-xAxis {
+  transform: translate(0, 7px) !important;
+}
+
+.recharts-wrapper {
+
+  transform: translate(0, 28px) !important;
+}
+
+.totalContainer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalChild {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.totalChild:first-of-type {
+  gap: 4px;
+}
+
+.totalText {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #92857a;
+}
+
+.totalAmt {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: #382314;
+}
+
+.increaseAmt {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  color: #382314;
+}
+
+.line {
+  outline: 1px solid #f8e9dd;
+  position: absolute;
+  bottom: 111px;
+  border-radius: 1px;
+  width: 302px;
+  left: 5.83%;
+  right: 5.83%;
+}
+
+/* Tooltip */
+
+.custom-tooltip {
+  background-color: #382314;
+  border-radius: 5px;
+  padding: 0px 9px 0px 9px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.label {
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFBF6;
+
+}
+
+.recharts-tooltip-wrapper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: red !important;
+
+}
+
+.recharts-default-tooltip {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.cell:hover {
+  fill-opacity: 0.7;
+}
+
+
+

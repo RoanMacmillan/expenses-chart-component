@@ -1,0 +1,29 @@
+.headingContainer {
+  height: 97px;
+  width: 100%;
+  background: #ec755d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 24px;
+}
+
+.headingContainer h1,
+.headingContainer span {
+  color: white;
+}
+
+.headingContainer span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.myBalance {
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

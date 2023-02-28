@@ -1,0 +1,61 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: black;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+  font-size: 18px;
+}
+
+/* min body height */
+
+body {
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: #f8e9dd;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #382314;
+}
+
+

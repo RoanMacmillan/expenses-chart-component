@@ -68,6 +68,9 @@ const Chart = () => {
   // color for the bar with highest spend amount
   const highestValueColor = '#76B5BC';
 
+
+  
+
   return (
     <div className="chart">
       <h2>Spending - Last 7 days</h2>

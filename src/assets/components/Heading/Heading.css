@@ -41,5 +41,7 @@
     padding-left: 32px;
     padding-right: 39px;
     height: 125px;
+    border-radius: 20px;
+
   }
 }

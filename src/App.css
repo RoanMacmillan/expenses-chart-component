@@ -31,9 +31,10 @@ body {
 .App {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   background: #f8e9dd;
+  position: relative;
 }
 
 /* responsive images/videos */
@@ -58,4 +59,15 @@ h2 {
   color: #382314;
 }
 
+@media screen and (min-width: 575px) {
+  h1 {
+    font-size: 18px;
+    line-height: 23px;
 
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}

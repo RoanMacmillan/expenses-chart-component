@@ -22,8 +22,24 @@
 }
 
 .myBalance {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+@media screen and (min-width: 575px) {
+  .myBalance {
+    gap: 8px;
+  }
+
+  .headingContainer span {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .headingContainer {
+    padding-left: 32px;
+    padding-right: 39px;
+    height: 125px;
+  }
 }

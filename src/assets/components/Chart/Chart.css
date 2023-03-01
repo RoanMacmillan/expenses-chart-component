@@ -9,15 +9,11 @@
   position: relative;
 }
 
-.barsContainer {
-}
-
 .recharts-xAxis {
   transform: translate(0, 7px) !important;
 }
 
 .recharts-wrapper {
-
   transform: translate(0, 28px) !important;
 }
 
@@ -83,12 +79,10 @@
 }
 
 .label {
-
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFBF6;
-
+  color: #fffbf6;
 }
 
 .recharts-tooltip-wrapper {
@@ -96,7 +90,6 @@
   box-shadow: none !important;
   outline: none !important;
   color: red !important;
-
 }
 
 .recharts-default-tooltip {
@@ -109,5 +102,55 @@
   fill-opacity: 0.7;
 }
 
+@media screen and (min-width: 575px) {
+  .totalChild:first-of-type {
+    gap: 1px;
+  }
 
+  .totalText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #92857a;
+  }
 
+  .totalAmt {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #382314;
+  }
+
+  .increaseAmt {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    color: #382314;
+  }
+
+  .chart {
+    padding: 32px 39.5px 40px 40px;
+    height: 511px;
+  }
+
+  .line {
+    bottom: 159px;
+    width: 460px;
+    left: 7.41%;
+    right: 7.41%;
+  }
+
+ 
+ 
+  .barChart {
+
+    margin-left: -8px !important;
+  }
+  
+  .recharts-wrapper {
+    transform: translate(0, 41px) !important;
+    
+  }
+  
+}

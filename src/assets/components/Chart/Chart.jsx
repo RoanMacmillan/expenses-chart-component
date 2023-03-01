@@ -1,9 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chart.css';
 import { BarChart, Bar, XAxis, Cell, Tooltip } from 'recharts';
 
 const Chart = () => {
   const [active, setActive] = useState(false);
+  const [barSize, setBarSize] = useState(50.36);
+  const [chartSize, setChartSize] = useState(478.5);
+  const [borderRadius, setBorderRadius] = useState(5);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 575px)');
+
+    const handleResize = (mq) => {
+      if (mq.matches) {
+        setBarSize(33);
+        setChartSize(303);
+        setBorderRadius(3);
+      } else {
+        setBarSize(50.36);
+        setChartSize(478.5);
+        setBorderRadius(5);
+      }
+    };
+
+    handleResize(mediaQuery);
+    mediaQuery.addListener(handleResize);
+
+    return () => {
+      mediaQuery.removeListener(handleResize);
+    };
+  }, []);
+
+  
 
   const data = [
     {
@@ -45,12 +72,11 @@ const Chart = () => {
     <div className="chart">
       <h2>Spending - Last 7 days</h2>
       <BarChart
-        width={303}
+        className="barChart"
+        width={chartSize}
         height={201.9}
         data={data}
-        margin={{ top: 0, left: -6.0, right: -6.0, bottom: 0 }}
-        // style={{ outline: '2px solid red' }}
-        onBlur={() => setActive(false)}
+        margin={{ top: 0, left: 0, right: 0, bottom: 0 }}
       >
         <XAxis
           dataKey="day"
@@ -67,6 +93,7 @@ const Chart = () => {
           cursor={{ fill: '#f8e9dd' }}
           position={{ y: -30 }}
           active={active}
+          
           content={({ payload }) => {
             if (payload && payload.length) {
               return (
@@ -79,7 +106,12 @@ const Chart = () => {
           }}
         />
 
-        <Bar dataKey="amount" radius={3} barSize={33} cursor="pointer">
+        <Bar
+          dataKey="amount"
+          radius={borderRadius}
+          barSize={barSize}
+          cursor="pointer"
+        >
           {data.map((entry, index) => (
             <Cell
               key={`cell-${index}`}

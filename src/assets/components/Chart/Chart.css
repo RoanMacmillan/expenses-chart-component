@@ -86,15 +86,6 @@
 }
 
 .recharts-tooltip-wrapper {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  outline: none !important;
-  color: red !important;
-}
-
-.recharts-default-tooltip {
-  background-color: transparent !important;
-  border: none !important;
   outline: none !important;
 }
 
@@ -141,16 +132,15 @@
     right: 7.41%;
   }
 
- 
- 
   .barChart {
-
     margin-left: -8px !important;
   }
-  
+
   .recharts-wrapper {
     transform: translate(0, 41px) !important;
-    
   }
-  
+
+  tspan {
+    font-size: 15px;
+  }
 }

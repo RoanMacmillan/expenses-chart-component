@@ -9,7 +9,7 @@ const Heading = () => {
         <h1>My Balance</h1>
         <span>$921.48</span>
       </div>
-    <Logo />
+      <Logo />
     </div>
   );
 };

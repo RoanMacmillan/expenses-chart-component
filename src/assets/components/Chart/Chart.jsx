@@ -3,10 +3,10 @@ import './Chart.css';
 import { BarChart, Bar, XAxis, Cell, Tooltip } from 'recharts';
 
 const Chart = () => {
-  const [active, setActive] = useState(false);
   const [barSize, setBarSize] = useState(50.36);
   const [chartSize, setChartSize] = useState(478.5);
   const [borderRadius, setBorderRadius] = useState(5);
+  // const [fontSize, setFontSize] = useState(15);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 575px)');
 
@@ -15,10 +15,12 @@ const Chart = () => {
         setBarSize(33);
         setChartSize(303);
         setBorderRadius(3);
+        // setFontSize(12)
       } else {
         setBarSize(50.36);
         setChartSize(478.5);
         setBorderRadius(5);
+        // setFontSize(15);
       }
     };
 
@@ -29,8 +31,6 @@ const Chart = () => {
       mediaQuery.removeListener(handleResize);
     };
   }, []);
-
-  
 
   const data = [
     {
@@ -89,11 +89,8 @@ const Chart = () => {
         />
 
         <Tooltip
-          trigger="click"
           cursor={{ fill: '#f8e9dd' }}
           position={{ y: -30 }}
-          active={active}
-          
           content={({ payload }) => {
             if (payload && payload.length) {
               return (
@@ -118,7 +115,6 @@ const Chart = () => {
               // styles the bar with the highest amount spent to the color cyan
               fill={entry.amount === maxAmount ? highestValueColor : '#EC755D'}
               className="cell"
-              onClick={() => setActive(true)}
             />
           ))}
         </Bar>

@@ -5,10 +5,12 @@ import Chart from '../Chart/Chart';
 
 const ChartContainer = () => {
   return (
+    <main>
     <div className="chartContainer">
       <Heading />
       <Chart />
     </div>
+    </main>
   );
 };
 

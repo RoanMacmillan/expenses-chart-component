@@ -4,6 +4,7 @@ import Logo from '../Logo/Logo';
 
 const Heading = () => {
   return (
+    <header>
     <div className="headingContainer">
       <div className="myBalance">
         <h1>My Balance</h1>
@@ -11,6 +12,7 @@ const Heading = () => {
       </div>
       <Logo />
     </div>
+    </header>
   );
 };
 

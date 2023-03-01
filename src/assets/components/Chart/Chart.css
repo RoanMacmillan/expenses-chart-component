@@ -101,7 +101,7 @@
   .totalChild:last-of-type {
     margin-bottom: 0px;
     transform: translate(0, -10px) !important;
-
+    gap: 1px;
   }
 
   .totalText {

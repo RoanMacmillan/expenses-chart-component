@@ -68,9 +68,6 @@ const Chart = () => {
   // color for the bar with highest spend amount
   const highestValueColor = '#76B5BC';
 
-
-  
-
   return (
     <div className="chart">
       <h2>Spending - Last 7 days</h2>
@@ -92,7 +89,7 @@ const Chart = () => {
         />
 
         <Tooltip
-          cursor={{ fill: '#f8e9dd' }}
+          cursor={{ fill: '#f8e9dd', radius: 5 }}
           position={{ y: -30 }}
           content={({ payload }) => {
             if (payload && payload.length) {

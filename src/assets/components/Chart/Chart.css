@@ -99,8 +99,9 @@
   }
 
   .totalChild:last-of-type {
+    margin-bottom: 0px;
+    transform: translate(0, -10px) !important;
 
-    margin-bottom: 5px;
   }
 
   .totalText {
@@ -140,7 +141,6 @@
 
   .barChart {
     margin-left: -8px !important;
-    
   }
 
   .recharts-wrapper {
@@ -148,15 +148,13 @@
   }
 
   .recharts-bar {
-
-    transform: translate(0, -3px) !important;
-
+    transform: translate(0, 2px) !important;
   }
 
+  .recharts-cartesian-axis-ticks {
+  }
   .recharts-rectangle.recharts-tooltip-cursor {
-
-    transform: translate(0, -3px) !important;
-    
+    transform: translate(0, 2px) !important;
   }
 
   tspan {

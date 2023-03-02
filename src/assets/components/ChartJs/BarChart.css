@@ -1,0 +1,134 @@
+.chart {
+    /* width: 100%; */
+    height: 421px;
+    background: #fffbf6;
+    border-radius: 10px;
+    padding: 24px 20px 24px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+  }
+
+  .totalContainer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .totalChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .totalChild:first-of-type {
+    gap: 4px;
+  }
+  
+  .totalText {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #92857a;
+  }
+  
+  .totalAmt {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #382314;
+  }
+  
+  .increaseAmt {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    color: #382314;
+  }
+  
+  .line {
+    outline: 1px solid #f8e9dd;
+    position: absolute;
+    bottom: 111px;
+    border-radius: 1px;
+    width: 302px;
+    left: 5.83%;
+    right: 5.83%;
+  }
+  
+  canvas {
+
+    
+    /* height: 200px; */
+    
+}
+
+.chartCont {
+    bottom: 153px;
+    position: absolute;
+    height: 187px ;
+    width: 303px;
+}
+
+
+  @media screen and (min-width: 575px) {
+    .totalChild:first-of-type {
+      gap: 1px;
+    }
+  
+    .totalChild:last-of-type {
+      margin-bottom: 0px;
+      transform: translate(0, -10px) !important;
+      gap: 1px;
+    }
+  
+    .totalText {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23.44px;
+      color: #92857a;
+    }
+  
+    .totalAmt {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 62px;
+      color: #382314;
+    }
+  
+    .increaseAmt {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: right;
+      color: #382314;
+    }
+  
+    .chart {
+      padding: 32px 39.5px 40px 40px;
+      height: 511px;
+      border-radius: 20px;
+    }
+  
+    .line {
+      bottom: 159px;
+      width: 460px;
+      left: 7.41%;
+      right: 7.41%;
+    }
+  
+    /* .barChart {
+      margin-left: -8px !important;
+    } */
+    
+    .chartCont {
+        bottom: 193px;
+        position: absolute;
+        width: 460.5px;
+    }
+    
+    
+   
+  }
